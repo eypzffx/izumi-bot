@@ -10,7 +10,8 @@ function convertToBool(text, fault = 'true') {
 
 const toBool = (x) => (x && x.toLowerCase() === 'true') || false;
 global.apiUrl = 'https://api.maskser.me/'
-
+global.eypzApi = 'https://api2.eypz.infy.uk/'
+global.Api = 'https://api.eypz.infy.uk/'
 
 const DATABASE_URL = process.env.DATABASE_URL === undefined ? './database.db' : process.env.DATABASE_URL;
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
@@ -24,17 +25,17 @@ module.exports = {
   LOG_MSG: toBool(process.env.LOG_MSG) || true,
   READ_CMD: toBool(process.env.READ_CMD),
   SESSION_ID: process.env.SESSION_ID || "izumi session",
-  MENU_URL: process.env.MENU_URL || "https://ik.imagekit.io/eypz/1722873079279_lHOJlrddC.png",
-  CAPTION: process.env.CAPTION || "Iᴢᴜᴍɪ",
+  MENU_URL: process.env.MENU_URL || "https://files.catbox.moe/hkqhic.jpeg",
+  CAPTION: process.env.CAPTION || "Made with 🤍",
   READ_MSG: toBool(process.env.READ_MSG),
-  OWNER_NAME: process.env.OWNER_NAME || "Eypz God",
-  BOT_NAME: process.env.BOT_NAME || "𝚰𝚭𝐔𝚳𝚰-𝚅3",
+  OWNER_NAME: process.env.OWNER_NAME || "Eʏᴘᴢ",
+  BOT_NAME: process.env.BOT_NAME || "Iᴢᴜᴍɪ-ᴍᴅ",
   SUDO: process.env.SUDO || null,
   LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
-  STICKER_PACKNAME: process.env.STICKER_PACKNAME || "Izumi-v3,❤️",
-  AUDIO_DATA: process.env.AUDIO_DATA || "Eʏᴘᴢ;Iᴢᴜᴍɪ-ᴠ3;https://i.imgur.com/cO0TZJv.jpeg",
-  PROCESSNAME: process.env.PROCESSNAME || "Izumi-v3",
-  AUTHOR: process.env.AUTHOR || "Eypz God",
+  STICKER_PACKNAME: process.env.STICKER_PACKNAME || "Iᴢᴜᴍɪ-ᴍᴅ,Eʏᴘᴢ",
+  AUDIO_DATA: process.env.AUDIO_DATA || "Eʏᴘᴢ;Iᴢᴜᴍɪ-ᴍᴅ;https://files.catbox.moe/eykuka.png",
+  PROCESSNAME: process.env.PROCESSNAME || "Iᴢᴜᴍɪ-ᴍᴅ",
+  AUTHOR: process.env.AUTHOR || "Eʏᴘᴢ",
   DELETED_LOG_CHAT: process.env.DELETED_LOG_CHAT || false,
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
