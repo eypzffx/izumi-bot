@@ -3,10 +3,11 @@ services:
     name: izumi-md
     repo: https://github.com/Akshay-Eypz/izumi-bot
     branch: main
-    env: docker
-    dockerfilePath: Dockerfile
+    env: node
     plan: free
     autoDeploy: true
+    buildCommand: npm install
+    startCommand: npm start
     envVars:
       - key: SESSION_ID
         sync: false
@@ -46,7 +47,7 @@ services:
         required: false
       - key: AUTHOR
         sync: false
-        require: false
+        required: false
       - key: PORT
         sync: false
-        require: true
+        required: true
